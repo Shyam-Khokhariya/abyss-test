@@ -1,0 +1,197 @@
+.tree-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.draggable-component{
+    background-color: #dc3545;
+}
+.drop-container{
+    background-color: #007bff;
+}
+.tree-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.node-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  /* padding-right: 85px; */
+  position: relative;
+}
+
+.node-input {
+  display: flex;
+  height: 22px;
+  font-size: 14px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #fef1cc;
+  border: none;
+  border-radius: 5px;
+}
+
+.node-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #b4ed85;
+  border-radius: 5px;
+  max-width: 100px;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+
+.base-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #ffc107;
+  border-radius: 5px;
+}
+
+.base-node-button {
+  position: absolute;
+  right: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.node-button {
+  position: absolute;
+  right: -85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.node-actions {
+  margin-left: 10px;
+}
+
+.node-actions button {
+  margin-right: 5px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.node-actions button:hover {
+  color: #007bff;
+}
+
+.save-button {
+  position: absolute;
+  right: -30px;
+  border: none;
+  display: flex;
+  margin-left: 5px;
+  background-color: #d7ffe0;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.save-button i {
+  color: #28a745;
+}
+
+.add-button {
+  border: none;
+  display: flex;
+  margin-left: 5px;
+  background-color: #d7f5f9;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+.add-button i {
+  color: #17a2b8;
+}
+
+.edit-button {
+  border: none;
+  display: flex;
+  margin-left: 5px;
+  background-color: #fef1cc;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.edit-button i {
+  color: #ffc107;
+}
+
+.delete-button {
+  border: none;
+  display: flex;
+  margin-left: 5px;
+  background-color: #ffc6cc;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.delete-button i {
+  color: #dc3545;
+}
+
+.tree-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+input[type='text'] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.tree-node .tree-children {
+  display: flex;
+}
+
+.bottom-stright {
+  height: 15px;
+  width: 2px;
+  background-color: #000000;
+}
+.top-stright {
+  height: 15px;
+  width: 2px;
+  background-color: #000000;
+}
+
+.isCenter {
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+}
+.isRight {
+  align-self: flex-start;
+  height: 2px;
+  width: 50%;
+  background-color: #000000;
+}
+.isLeft {
+  align-self: flex-end;
+  height: 2px;
+  width: 50%;
+  background-color: #000000;
+}
